@@ -1,19 +1,48 @@
 aid: doos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/doos.png
 name: Doos
-description: Doos is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Doos is a Saudi-based quick-commerce (q-commerce) platform and mobile app that
+  delivers groceries, fresh produce, beauty, gifting, pharmacy, and lifestyle
+  products in minutes across Saudi Arabia. Founded in 2023 by Tala Al Sahsah, it
+  operates cloud/dark stores in Jeddah and Riyadh with localised assortments,
+  prices, and promotions by city and delivery zone, offering a bilingual
+  (Arabic/English) shopping experience. Doos is backed by 500 Global and received
+  a strategic investment from Jahez to accelerate its expansion in the Kingdom's
+  growing quick-commerce sector. This is a consumer-facing storefront; no public
+  developer program or API has been identified at this time.
 url: https://raw.githubusercontent.com/api-evangelist/doos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
+- jahez
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Quick Commerce
+- Q-Commerce
+- Grocery Delivery
+- E-Commerce
+- Retail
+- Consumer
+- Saudi Arabia
+- MENA
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,12 @@ maintainers:
 common:
 - type: Website
   url: https://doos.sa
+- type: LLMsTxt
+  url: llms/doos-llms.txt
+- type: DomainSecurity
+  url: security/doos-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
